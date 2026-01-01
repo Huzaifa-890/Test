@@ -1,0 +1,82 @@
+ .font-anton {
+            font-family: 'Anton', 'Impact', sans-serif;
+        }
+
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes bounceLeft {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-12px);
+            }
+        }
+
+        @keyframes bounceRight {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(12px);
+            }
+        }
+
+        .arrow-left {
+            animation: bounceLeft 1.8s infinite ease-in-out;
+        }
+
+        .arrow-right {
+            animation: bounceRight 1.8s infinite ease-in-out;
+        }
+
+        /* NORMAL BULLETS */
+        .swiper-pagination-bullet {
+            background: #d1d5db !important;
+            /* light gray */
+            opacity: 1 !important;
+            width: 10px;
+            height: 10px;
+        }
+
+        /* ACTIVE BULLET YELLOW */
+        .swiper-pagination-bullet-active {
+            background: #facc15 !important;
+            /* Tailwind Yellow-400 */
+            width: 12px;
+            height: 12px;
+        }
+
+         .arrow-left,
+        .arrow-right {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .arrow-left:hover {
+            transform: translateX(-5px);
+        }
+
+        .arrow-right:hover {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 640px) {
+
+            .arrow-left,
+            .arrow-right {
+                font-size: 2.5rem;
+            }
+        }

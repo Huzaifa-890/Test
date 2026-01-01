@@ -10,69 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <style>
-        .font-anton {
-            font-family: 'Anton', 'Impact', sans-serif;
-        }
-
-        .font-bebas {
-            font-family: 'Bebas Neue', sans-serif;
-        }
-
-        .font-roboto {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        @keyframes bounceLeft {
-
-            0%,
-            100% {
-                transform: translateX(0);
-            }
-
-            50% {
-                transform: translateX(-12px);
-            }
-        }
-
-        @keyframes bounceRight {
-
-            0%,
-            100% {
-                transform: translateX(0);
-            }
-
-            50% {
-                transform: translateX(12px);
-            }
-        }
-
-        .arrow-left {
-            animation: bounceLeft 1.8s infinite ease-in-out;
-        }
-
-        .arrow-right {
-            animation: bounceRight 1.8s infinite ease-in-out;
-        }
-
-        /* NORMAL BULLETS */
-        .swiper-pagination-bullet {
-            background: #d1d5db !important;
-            /* light gray */
-            opacity: 1 !important;
-            width: 10px;
-            height: 10px;
-        }
-
-        /* ACTIVE BULLET YELLOW */
-        .swiper-pagination-bullet-active {
-            background: #facc15 !important;
-            /* Tailwind Yellow-400 */
-            width: 12px;
-            height: 12px;
-        }
-    </style>
+   <link rel="stylesheet" href="./style.css">
+    
 </head>
 
 <body class="bg-gray-100 font-roboto text-white">
@@ -147,30 +86,7 @@
     </header>
 
 
-    <style>
-        .arrow-left,
-        .arrow-right {
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .arrow-left:hover {
-            transform: translateX(-5px);
-        }
-
-        .arrow-right:hover {
-            transform: translateX(5px);
-        }
-
-        @media (max-width: 640px) {
-
-            .arrow-left,
-            .arrow-right {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
-
+    
     <!-- Hero Section -->
     <section class="relative w-full text-white overflow-hidden">
         <div class="max-w-[1400px] mx-auto
@@ -180,7 +96,7 @@
       items-center">
             <!-- Background Video -->
             <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
-                <source src="./video.mp4" type="video/mp4">
+                <source src="https://res.cloudinary.com/dhpatsgi6/video/upload/v1767303499/67fd211711cc716fa04b2a49_1_imlk8v.mp4" type="video/mp4">
             </video>
 
             <!-- Dark Overlay -->
